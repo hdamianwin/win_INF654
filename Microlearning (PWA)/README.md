@@ -17,7 +17,7 @@ A simple app with educational purpose to help students to utilize microlearning 
 ## 2. Installation
 
 1. Clone this repository:
-   git clone https://github.com/your-username/microlearn-app.git
+   git clone https://github.com/hdamianwin/win_INF654/tree/main/Microlearning%20(PWA)
 
 2. Navigate to the project folder:
    cd microlearn-app
