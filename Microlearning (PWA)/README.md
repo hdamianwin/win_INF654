@@ -8,7 +8,9 @@ A simple app with educational purpose to help students to utilize microlearning 
 3. [Usage] (#usage)
 4. [Features] (#features)
 5. [Technologies Used] (#technologies-used)
-6. [Future Development] (#future-development)
+6. [Service Worker] (#service-worker)
+7. [Manifest File] (#manifest-file)
+8. [Future Development] (#future-development)
 
 ## 1. Introduction
 
@@ -45,7 +47,32 @@ Alternatively, you can use a local server such as **Live Server** in VS Code for
 - CSS (Materialize CSS)
 - JavaScript
 
-## 6. Future Development
+## 6. Service Worker
+
+The Microlearn App includes the service worker to let the application have offline capabilities and enhance performance by caching resources.
+
+The caching ensures that the app can be accessed without the internet connection.
+
+### Caching Strategy
+
+- **Install Event**: The service worker caches specified assests during installation.
+- **Activate Event**: The service worker detect the old caches and delete them upon activation of new service worker.
+- **Fetch Event**: The service worker intercepts the network requests, check the  caches and return from the cache if found.
+
+## 7. Maninfest File
+
+The Microlearn App includes manifest file, which provides metadata for the PWA to be installed to the device.
+
+- **Name**: Microlearn
+- **Short Name**: ML
+- **Description**: Manage your study time through microlearnning.
+- **Icons**: Different sizes for responsiveness across devices.
+- **Start URL**: Directs to the main page (index.html).
+- **Display Mode**: Standalone for native app experience.
+- **Background Color**: Matches the application's design.
+- **Theme Color**: Matches the thems color for the app.
+
+## 8. Future Development
 
 1. **Timer**: Add timers for the users to know when to study and when to take a break
 2. **User Autentication**: Implement user login and registration system to have a personalized system.
