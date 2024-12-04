@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microlearn</title>
+</head>
+<body>
+    <div class="container z-depth-2" style="padding: 0; margin-top: 20px;">
+        <header>
+            <nav class="blue-grey lighten-3">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo brown-text text-darken-3" style="padding-left: 20px; font-size: 32px;"><strong>Microlearn</strong></a>
+                    <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="/index.html" class="black-text">Home</a></li>
+                        <li><a href="/pages/history.html" class="black-text">History</a></li>
+                        <li><a href="/pages/contact.html" class="black-text">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <aside>
+            <ul class="sidenav blue-grey lighten-3" id="mobile-menu">
+                <li>
+                    <a href="/index.html" class="subheader black-text" style="font-size: 1.5em;"><strong>Microlearn</strong></a>
+                </li>
+                <li><a href="/index.html" class="black-text">Home</a></li>
+                <li><a href="/pages/history.html" class="black-text">History</a></li>
+                <li><a href="/pages/contact.html" class="black-text">Contact</a></li>
+            </ul>
+        </aside>
+
+        <main id="main-container" style="background-image: url('/images/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 20px;">
+            <h2 class="brown-text text-darken-3" style="font-weight: bold;">Enter Your Study Session</h2>
+            <!-- Input form for new study session -->
+            <form id="study-form">
+                <div class="input-field">
+                    <input id="subject" type="text" required />
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="input-field">
+                    <input id="study-time" type="text" required />
+                    <label for="study-time">Total Study Time</label>
+                </div>
+                <button type="submit" class="btn blue">Add Session</button>
+            </form>
+
+            <!-- Container to display the study sessions -->
+            <h4 class="brown-text text-darken-3" style="font-weight: bold;">Your Study Sessions</h4>
+            <div class="studies"></div>
+
+            <div id="storage-usage" style="margin-top: 20px;"></div> <!-- Add this div for storage info -->
+
+        </main>
+    </div>
+
+    <script src="/js/materialize.min.js"></script>
+    <script type="module" src="/js/ui.js"></script>
+    <script type="module" src="/js/firebaseDB.js"></script>
+</body>
+</html>
