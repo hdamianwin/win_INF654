@@ -1,0 +1,76 @@
+{
+    "name": "Microlearning",
+    "short_name": "ML",
+    "description": "Manage your study time by microleaning",
+    "start_url": "/index.html",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background-color": "#b0bec5",
+    "theme_color": "#212121",
+    "lang": "en-US",
+    "icons": [
+        {
+            "src": "/images/icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+          },
+          {
+            "src": "/images/icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+          },
+          {
+            "src": "/images/icons/favicon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+          },
+          {
+            "src": "/images/icons/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+          }
+    ],
+
+    "screenshots": [
+        {
+          "src": "/images/screenshots/Screenshot2.png",
+          "type": "image/png",
+          "sizes": "776x914",
+          "form_factor": "wide"
+        },
+        {
+          "src": "/images/screenshots/Screenshot1.png",
+          "type": "image/png",
+          "sizes": "776x914",
+          "form_factor": "narrow"
+        }
+    ],
+
+    "shortcuts": [
+    {
+      "name": "Add Study Time",
+      "short_name": "New Study Time",
+      "description": "Quickly add a new study time",
+      "url": "/new-study-time",
+      "icons": [
+        {
+          "src": "/images/screenshots/Screenshot2.png",
+          "sizes": "776x914"
+        }
+      ]
+    },
+    {
+      "name": "View Study Time Summary",
+      "short_name": "summary",
+      "description": "View study time summary",
+      "url": "/summary",
+      "icons": [
+        {
+          "src": "/images/screenshots/Screenshot1.png",
+          "sizes": "776x914"
+        }
+      ]
+    }
+  ]
+}

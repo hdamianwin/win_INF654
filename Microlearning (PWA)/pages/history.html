@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microlearn</title>
+</head>
+<body>
+    <div class="container z-depth-2" style="padding: 0; margin-top: 20px;">
+        <header>
+            <nav class="blue-grey lighten-3">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo brown-text text-darken-3" style="padding-left: 20px; font-size: 32px;">
+                        <strong>Microlearn</strong>
+                    </a>
+                    <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="/index.html" class="black-text">Home</a></li>
+                        <li><a href="/pages/history.html" class="black-text">History</a></li>
+                        <li><a href="/pages/contact.html" class="black-text">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside>
+            <ul class="sidenav blue-grey lighten-3" id="mobile-menu">
+                <li><a href="/index.html" class="subheader black-text" style="font-size: 1.5em;"><strong>Microlearn</strong></a></li>
+                <li><a href="/index.html" class="black-text">Home</a></li>
+                <li><a href="/pages/history.html" class="black-text">History</a></li>
+                <li><a href="/pages/contact.html" class="black-text">Contact</a></li>
+            </ul>
+        </aside>
+
+        <main style="background-image: url('/images/history.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 20px; background-color: rgba(255, 255, 255, 0.7);">
+            <h2 class="brown-text text-darken-3" style="font-weight: bold;">About!</h2>
+                <p class="black-text" style="font-size:20px; font-weight: bold;">
+                    Microlearn is designed to help you study more effectively and efficiently. If you have any inquiries about our features or how to get the most out of your learning experience, please feel free to reach out.
+                </p>
+
+            <!-- Features Section -->
+            <section class="features-section" style="margin-top: 40px;">
+                <h2 class="center-align brown-text text-darken-3">Why Choose Microlearn?</h2>
+                <p class="black-text" style="font-size: 16px; font-weight: 300;">
+                    Microlearn offers personalized study plans based on your learning preferences and goals. It also helps manage your focus and break times using scientifically proven techniques, improving concentration and retention. Whether you're preparing for exams or mastering new topics, we provide tailored recommendations to optimize your study sessions and avoid burnout.
+                </p>
+            </section>
+
+            <!-- Getting Started Section -->
+            <section class="getting-started-section" style="margin-top: 40px;">
+                <h2 class="center-align brown-text text-darken-3">Getting Started</h2>
+                <p class="black-text" style="font-size: 16px; font-weight: 300;">
+                    To get started, set your study goals. Once defined, Microlearn will create a personalized study plan for you. Begin your study sessions with guided focus and break times to maintain productivity and prevent burnout. Let Microlearn help you reach your full potential with a smooth, balanced study flow.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <script src="/js/materialize.min.js"></script>
+    <script type="module" src="/js/ui.js"></script>
+    <script type="module" src="/js/firebaseDB.js"></script>
+    <script type="module" src="/js/auth.js"></script>
+</body>
+</html>
